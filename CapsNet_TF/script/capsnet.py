@@ -1,3 +1,7 @@
+"""
+Author: Amit Kumar Jaiswal <amitkumarj441@gmail.com>
+"""
+
 import tensorflow as tf
 import os
 import time
@@ -195,7 +199,7 @@ class CapsModel(object):
         """
         Train capsnet model
         """
-        print('training start...')
+        print('Start training...')
         batch_size = self.params.batch_size
         train_steps = self.params.train_epoch * self.data_provider.train.num_examples // batch_size
         for step in range(train_steps):
