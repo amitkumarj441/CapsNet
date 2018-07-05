@@ -118,7 +118,7 @@ def mergeImgs(images, size):
     return imgs
 
 
-def quantize(input, bits):
+def quantize(input, bits=8):
     if bits > 15:
         return input
     elif bits == 1:  # BNN
